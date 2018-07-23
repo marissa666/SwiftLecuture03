@@ -10,6 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var lbName: UILabel!
+    
+    @IBOutlet weak var btnConfirm: UIButton!
+    
+    @IBAction func btnConfirmClicked(_ sender: UIButton) {
+        lbName.text = "changed!"
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
